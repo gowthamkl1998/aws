@@ -1,0 +1,120 @@
+CLOUD COMPUTING
+
+Cloud computing is a way to access computing services on-demand, such as storage, servers, networking, software, and analytics, over the internet.
+It allows users to rent computing services instead of buying them, and pay for what they use. 
+
+Advantages
+- Cost Efficient
+- Services are hosted virtually
+- Security
+- Pay as you go model
+
+SERVICE MODEL
+
+On-Premises
+
+1. Application : Software Program
+2. Data : Collection of stored databases or information
+3. Runtime : Execution Environment
+4. Middleware : It is a software which acts as bridge or intermediatory b/w different applications or systems
+5. OS : It is the interface b/w user and applications.It is a collection of programs which acts as mediator b/w harware and software.
+6. Virtualization : Virtual version of something such as OS, storage, network resources.
+7. Server : A server is a computer or system i.e manage,store,distribute network resources. Servers are typically powerful machines that have a large amounts of memory,
+            storage and processing power and are designed to handle multiple request.
+8. Storage : It is used to store the information or data such as files, documents, images, videos etc
+9. Network : It is used to communicate b/w 2 or more devices.
+
+Types of Services
+
+IAAS(Infrastructure as a Service)
+
+From Virtualization to network
+Ex: EC2 - Elastic Cloud Compute
+
+PAAS( Platform as a Service)
+
+It is complete development and deployment environment in cloud from runtime to network.
+Ex : Elastic Bean Stalk
+
+SAAS(Software as a Service)
+
+Allows users to connect to and use cloud based apps over the internet.
+
+Reasons for migrating from On-Premises to Cloud?
+
+-Cost
+-High Security
+-More Feature
+-Scalability
+-Taken care by AWS
+-Maintance is done by Cloud
+
+AWS is Global Infrastructure - They have Data Centers everywhere
+
+- Regions
+- Availabilty Zones
+
+AWS provides Global Infrastructure because to provide high speed, low latency, which enables clients to access AWS services without any issues.
+
+Regions : Data center which is the physical location where we can find cluster of Availability Zone.
+AZ : Clusters of Data Centers, each AZ will be connected using internal network, each AZ will be situated within 100km
+     Each Region has many AZ  MIN : 2 AZ  MAX : 6 AZ in North Virginia
+                                          1. High Availability
+                                          2. All the new Features are updated in this region.
+
+VIRTUAL PRIVATE CLOUD (VPC)
+
+- Regional service
+- Virtual and dedicated network for your AWS account.
+- Network VPC = Owned by us
+- Using this dedicated network we can run resources 
+- Control who can access these resources (who can come inside and go outside)
+- By default we can create 5 VPC's
+- By default one VPC cannot talk to another VPC (Because it is an isolated network)\
+
+SUBNET : Dividing the big network into smaller network OR the range of IP Address in VPC.
+
+CIDR : CIDR stands for Classless Inter-Domain Routing, a method for allocating IP addresses that improves the efficiency of data routing on the internet.
+
+Main Route Table : It is storing alln the best path information from source to destination.
+
+(PING is a tool to check the connectivity)
+
+VPC PEERING
+
+- It establishes secure connection b/w two VPC's
+- To enable communication b/w 2 VPC's we establish peering connection
+- Peering is possible for
+    1. same region
+    2. cross region
+    3. cross account
+
+Going from VPC A to VPC B
+
+1. VPC A is requestor.
+2. VPC B is acceptor.
+3. No same CIDR range.
+4. Take different CIDR range.
+5. It is a 2 way communication.
+6. Edit route table of A and B because if VPC A wants to communicate with VPC B.
+
+TRANSIT GATEWAY
+
+- It is used to attach one or more VPC's.
+
+Attachment: The connection from AMAZON VPC
+Association: The route table used to route packets coming from an attachment
+Propagation: The route tables where the attachments are installed.
+
+EC2 (ELASTIC CLOUD COMPUTE)
+
+- It is a level at which system ia able to adapt to workload changes by provisioning and deprovisioning the resources.
+- Amazon is a virtual server for running applications on EC2.
+  1. Scalable
+  2. Cost efficient.
+- Amazon is the most popular AWS offering.
+- It is a IAAS
+
+EC2 Instance Types
+
+1. General Purpose                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
